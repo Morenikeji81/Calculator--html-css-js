@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CALCULATOR</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" class="result" id="input" placeholder=" " />
+      <div class="grid-items">
+        <button class="button" id="button-special" onclick="Default('')">
+          AC
+        </button>
+        <button class="button">+/-</button>
+        <button class="button" onclick="AddUp('%')">%</button>
+        <button class="button--button" onclick="AddUp('/')">/</button>
+      </div>
+      <div class="grid-items1">
+        <button class="button---button" onclick="AddUp('7')">7</button>
+        <button class="button---button" onclick="AddUp('8')">8</button>
+        <button class="button---button" onclick="AddUp('9')">9</button>
+        <button class="button--button" onclick="AddUp('*')">*</button>
+      </div>
+      <div class="grid-items2">
+        <button class="button---button" onclick="AddUp('4')">4</button>
+        <button class="button---button" onclick="AddUp('5')">5</button>
+        <button class="button---button" onclick="AddUp('6')">6</button>
+        <button class="button--button" onclick="AddUp('-')">-</button>
+      </div>
+      <div class="grid-items3">
+        <button class="button---button" onclick="AddUp('1')">1</button>
+        <button class="button---button" onclick="AddUp('2')">2</button>
+        <button class="button---button" onclick="AddUp('3')">3</button>
+        <button class="button--button" onclick="AddUp('+')">+</button>
+      </div>
+      <div class="grid-items4">
+        <button class="button---button" id="special" onclick="AddUp('0')">
+          0
+        </button>
+
+        <button class="button---button" onclick="del('')">del</button>
+        <button class="button--button" onclick="sum('=')">=</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
